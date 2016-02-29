@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'object Edit4: TEdit'
-  ClientHeight = 630
-  ClientWidth = 690
+  ClientHeight = 633
+  ClientWidth = 696
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -381,6 +381,27 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
   end
+  object Label29: TLabel
+    Left = 293
+    Top = 445
+    Width = 64
+    Height = 14
+    Caption = #1050#1086#1076' '#1088#1077#1089#1091#1088#1089#1072
+  end
+  object Label30: TLabel
+    Left = 426
+    Top = 445
+    Width = 105
+    Height = 14
+    Caption = #1056#1072#1079#1088#1077#1096#1077#1085#1085#1099#1081' '#1086#1073#1098#1077#1084
+  end
+  object Label31: TLabel
+    Left = 559
+    Top = 445
+    Width = 61
+    Height = 14
+    Caption = #1057#1091#1084#1084#1072'('#1056#1091#1073')'
+  end
   object Edit1: TEdit
     Left = 55
     Top = 22
@@ -595,12 +616,84 @@ object Form1: TForm1
     TabOrder = 25
   end
   object Button1: TButton
-    Left = 578
+    Left = 588
     Top = 596
     Width = 98
     Height = 25
     Caption = #1057#1086#1079#1076#1072#1090#1100
     TabOrder = 26
     OnClick = Button1Click
+  end
+  object Edit23: TEdit
+    Left = 293
+    Top = 465
+    Width = 127
+    Height = 22
+    TabOrder = 27
+    Text = 'Edit1'
+  end
+  object Edit24: TEdit
+    Left = 293
+    Top = 493
+    Width = 127
+    Height = 22
+    TabOrder = 28
+    Text = 'Edit1'
+  end
+  object Edit25: TEdit
+    Left = 293
+    Top = 521
+    Width = 127
+    Height = 22
+    TabOrder = 29
+    Text = 'Edit1'
+  end
+  object Edit26: TEdit
+    Left = 426
+    Top = 465
+    Width = 127
+    Height = 22
+    TabOrder = 30
+    Text = 'Edit1'
+  end
+  object Edit27: TEdit
+    Left = 426
+    Top = 493
+    Width = 127
+    Height = 22
+    TabOrder = 31
+    Text = 'Edit1'
+  end
+  object Edit28: TEdit
+    Left = 426
+    Top = 521
+    Width = 127
+    Height = 22
+    TabOrder = 32
+    Text = 'Edit1'
+  end
+  object Edit29: TEdit
+    Left = 559
+    Top = 465
+    Width = 127
+    Height = 22
+    TabOrder = 33
+    Text = 'Edit1'
+  end
+  object Edit30: TEdit
+    Left = 559
+    Top = 493
+    Width = 127
+    Height = 22
+    TabOrder = 34
+    Text = 'Edit1'
+  end
+  object Edit31: TEdit
+    Left = 559
+    Top = 521
+    Width = 127
+    Height = 22
+    TabOrder = 35
+    Text = 'Edit1'
   end
 end

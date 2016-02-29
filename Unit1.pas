@@ -64,6 +64,18 @@ type
     Label28: TLabel;
     DateTimePicker3: TDateTimePicker;
     Button1: TButton;
+    Edit23: TEdit;
+    Edit24: TEdit;
+    Edit25: TEdit;
+    Edit26: TEdit;
+    Edit27: TEdit;
+    Edit28: TEdit;
+    Edit29: TEdit;
+    Edit30: TEdit;
+    Edit31: TEdit;
+    Label29: TLabel;
+    Label30: TLabel;
+    Label31: TLabel;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
@@ -125,7 +137,7 @@ begin
     +#13+'биологических ресурсов'+#09+'дата полученя'+#09+'070'+#09+#09+#09+#09+#09+#09+DateToStr(DateTimePicker3.DateTime)
     +#13
     +#13+'Достоверность и полноту сведений, указанных на данной странице, подтверждаю'
-    +#13+'(подпись)'+#09+#09+#09+#09+'(дата)';
+    +#13+'___________(подпись)'+#09+#09+'__________(дата)';
 
 for I := 1 to 3 do
  Doc.Paragraphs.Item(i).Alignment:=wdAlignParagraphCenter;
@@ -148,7 +160,8 @@ for I := 1 to 3 do
  +#13+'(фамили, имя, отчество полностью )'
  +#13+'(наименование организации-представителя плательшика сбора)'
  +#13+'Подпись'+#09+#09+'дата'+ DateToStr(DateTimePicker1.DateTime)
- +#13+'Наименование документа,подтверждающего полномочия представителя'+edit17.Text;
+ +#13+'Наименование документа,подтверждающего полномочия представителя'
+ +#13+edit17.Text;
   Doc.Tables.Item(1).Cell(1,2).Range.text:=
   'Заполняется сотрудником налогвого органа'
   +#13+'Сведения о представлении документа'
@@ -159,22 +172,35 @@ for I := 1 to 3 do
   +#13+'Зарегистрирован за №'
   +#13
   +#13
-  +#13
-  +#13+'ФИО'+#09+#09+#09+#09+'Подпись';
+  +#13+'_____________'+#09+#09'__________'
+  +#13+'Фамилия И. О.'+#09+#09+#09+'Подпись';
  for I := 14 to 24 do
   Doc.Paragraphs.Item(i).Alignment:=wdAlignParagraphCenter;
  for I := 36 to 39 do
   Doc.Paragraphs.Item(i).Alignment:=wdAlignParagraphCenter;
-   Doc.Paragraphs.Item(38).Range.Font.Bold := 1;
+   Doc.Paragraphs.Item(39).Range.Font.Bold := 1;
   Doc.Paragraphs.Item(14).Range.Font.Bold := 1;
-  Doc.Paragraphs.Item(23).Range.Font.Bold := 1;
+  Doc.Paragraphs.Item(24).Range.Font.Bold := 1;
  for I := 47 to 48 do
   Doc.Paragraphs.Item(i).Alignment:=wdAlignParagraphLeft;
   Doc.Tables.Add(Doc.Paragraphs.Item(49).Range,1,3,wdWord9TableBehavior,wdAutoFitFixed);
-  Doc.Tables.Item(2).Cell(1,1).Range.text:='Код наименования объектов водных биологических ресурсов' +#13 +#13 +#13;
-  Doc.Tables.Item(2).Cell(1,2).Range.text:='Разрешенный объем прилова' +#13 +#13 +#13;
-  Doc.Tables.Item(2).Cell(1,3).Range.text:='Сумма единовременного взноса' +#13 +#13 +#13;
-  for I := 62 to 63 do
+  Doc.Tables.Item(2).Cell(1,1).Range.text:=
+  'Код наименования объектов водных биологических ресурсов'
+  +#13+Edit23.Text
+  +#13+Edit24.Text
+  +#13+Edit25.Text;
+  Doc.Tables.Item(2).Cell(1,2).Range.text:=
+  'Разрешенный объем прилова'
+  +#13
+  +#13+Edit26.Text
+  +#13+Edit27.Text
+  +#13+Edit28.Text;
+  Doc.Tables.Item(2).Cell(1,3).Range.text:=
+  'Сумма единовременного взноса'
+  +#13+Edit29.Text
+  +#13+Edit30.Text
+  +#13+Edit31.Text;
+  for I := 62 to 65 do
   Doc.Paragraphs.Item(i).Alignment:=wdAlignParagraphCenter;
 end;
 end.
