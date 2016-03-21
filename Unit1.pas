@@ -77,6 +77,7 @@ type
     Label30: TLabel;
     Label31: TLabel;
     procedure Button1Click(Sender: TObject);
+    procedure SpinEdit1Change(Sender: TObject);
   private
     { Private declarations }
   public
@@ -158,6 +159,7 @@ for I := 1 to 3 do
  +#13+ Edit8.Text
  +#13+ Edit9.Text
  +#13+'(фамили, имя, отчество полностью )'
+ +#13+ Edit16.Text
  +#13+'(наименование организации-представителя плательшика сбора)'
  +#13+'Подпись'+#09+#09+'дата'+ DateToStr(DateTimePicker1.DateTime)
  +#13+'Наименование документа,подтверждающего полномочия представителя'
@@ -178,12 +180,12 @@ for I := 1 to 3 do
   Doc.Paragraphs.Item(i).Alignment:=wdAlignParagraphCenter;
  for I := 36 to 39 do
   Doc.Paragraphs.Item(i).Alignment:=wdAlignParagraphCenter;
-   Doc.Paragraphs.Item(39).Range.Font.Bold := 1;
+   Doc.Paragraphs.Item(40).Range.Font.Bold := 1;
   Doc.Paragraphs.Item(14).Range.Font.Bold := 1;
-  Doc.Paragraphs.Item(24).Range.Font.Bold := 1;
- for I := 47 to 48 do
+  Doc.Paragraphs.Item(25).Range.Font.Bold := 1;
+ for I := 48 to 50 do
   Doc.Paragraphs.Item(i).Alignment:=wdAlignParagraphLeft;
-  Doc.Tables.Add(Doc.Paragraphs.Item(49).Range,1,3,wdWord9TableBehavior,wdAutoFitFixed);
+  Doc.Tables.Add(Doc.Paragraphs.Item(51).Range,1,3,wdWord9TableBehavior,wdAutoFitFixed);
   Doc.Tables.Item(2).Cell(1,1).Range.text:=
   'Код наименования объектов водных биологических ресурсов'
   +#13+Edit23.Text
@@ -200,7 +202,25 @@ for I := 1 to 3 do
   +#13+Edit29.Text
   +#13+Edit30.Text
   +#13+Edit31.Text;
-  for I := 62 to 65 do
+  for I := 64 to 66 do
   Doc.Paragraphs.Item(i).Alignment:=wdAlignParagraphCenter;
 end;
+procedure TForm1.SpinEdit1Change(Sender: TObject);
+begin
+if SpinEdit1.Value = 2 then
+begin
+ Edit7.Enabled:=false;
+ Edit8.Enabled:=false;
+ Edit9.Enabled:=false;
+ Edit16.Enabled:=true;
+end
+else
+ begin
+ Edit7.Enabled:=true;
+ Edit8.Enabled:=true;
+ Edit9.Enabled:=true;
+ Edit16.Enabled:=false;
+ end;
+end;
+
 end.

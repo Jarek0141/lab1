@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'object Edit4: TEdit'
-  ClientHeight = 633
-  ClientWidth = 696
+  ClientHeight = 657
+  ClientWidth = 780
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -278,8 +278,8 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label21: TLabel
-    Left = 8
-    Top = 420
+    Left = 152
+    Top = 428
     Width = 116
     Height = 13
     Caption = #1047#1085#1072#1095#1077#1085#1080#1103' '#1087#1086#1082#1072#1079#1072#1090#1077#1083#1077#1081
@@ -292,10 +292,10 @@ object Form1: TForm1
   end
   object Label22: TLabel
     Left = 8
-    Top = 442
-    Width = 22
+    Top = 447
+    Width = 164
     Height = 13
-    Caption = '010:'
+    Caption = #1050#1086#1076' '#1073#1102#1076#1078#1077#1090#1085#1086#1081' '#1082#1083#1072#1089#1089#1080#1092#1080#1082#1072#1094#1080#1080
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -305,10 +305,10 @@ object Form1: TForm1
   end
   object Label23: TLabel
     Left = 8
-    Top = 468
-    Width = 22
+    Top = 476
+    Width = 75
     Height = 13
-    Caption = '020:'
+    Caption = #1050#1086#1076' '#1087#1086' '#1054#1050#1058#1052#1054
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -318,10 +318,10 @@ object Form1: TForm1
   end
   object Label24: TLabel
     Left = 8
-    Top = 494
-    Width = 22
+    Top = 499
+    Width = 197
     Height = 13
-    Caption = '030:'
+    Caption = #1054#1073#1097#1072#1103' '#1089#1091#1084#1084#1072' '#1077#1076#1080#1085#1086#1074#1088#1077#1084#1077#1085#1085#1086#1075#1086' '#1074#1079#1085#1086#1089#1072
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -331,10 +331,10 @@ object Form1: TForm1
   end
   object Label25: TLabel
     Left = 8
-    Top = 520
-    Width = 22
+    Top = 525
+    Width = 197
     Height = 13
-    Caption = '040:'
+    Caption = #1044#1072#1090#1072' '#1091#1087#1083#1072#1090#1099' '#1077#1076#1080#1085#1086#1074#1088#1077#1084#1077#1085#1085#1086#1075#1086' '#1074#1079#1085#1086#1089#1072
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -344,10 +344,10 @@ object Form1: TForm1
   end
   object Label26: TLabel
     Left = 8
-    Top = 548
-    Width = 22
+    Top = 556
+    Width = 31
     Height = 13
-    Caption = '050:'
+    Caption = 'C'#1077#1088#1080#1103
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -357,10 +357,10 @@ object Form1: TForm1
   end
   object Label27: TLabel
     Left = 8
-    Top = 574
-    Width = 22
+    Top = 581
+    Width = 40
     Height = 13
-    Caption = '060:'
+    Caption = #1053#1086#1084#1077#1088#9
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -370,10 +370,10 @@ object Form1: TForm1
   end
   object Label28: TLabel
     Left = 8
-    Top = 600
-    Width = 22
+    Top = 609
+    Width = 77
     Height = 13
-    Caption = '070:'
+    Caption = #1044#1072#1090#1072' '#1087#1086#1083#1091#1095#1077#1085#1103
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -382,22 +382,22 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label29: TLabel
-    Left = 293
-    Top = 445
+    Left = 375
+    Top = 448
     Width = 64
     Height = 14
     Caption = #1050#1086#1076' '#1088#1077#1089#1091#1088#1089#1072
   end
   object Label30: TLabel
-    Left = 426
-    Top = 445
+    Left = 508
+    Top = 448
     Width = 105
     Height = 14
     Caption = #1056#1072#1079#1088#1077#1096#1077#1085#1085#1099#1081' '#1086#1073#1098#1077#1084
   end
   object Label31: TLabel
-    Left = 559
-    Top = 445
+    Left = 641
+    Top = 448
     Width = 61
     Height = 14
     Caption = #1057#1091#1084#1084#1072'('#1056#1091#1073')'
@@ -527,10 +527,11 @@ object Form1: TForm1
     Top = 323
     Width = 41
     Height = 23
-    MaxValue = 0
-    MinValue = 0
+    MaxValue = 2
+    MinValue = 1
     TabOrder = 15
     Value = 0
+    OnChange = SpinEdit1Change
   end
   object Edit16: TEdit
     Left = 344
@@ -558,32 +559,32 @@ object Form1: TForm1
     Text = 'Edit1'
   end
   object Edit18: TEdit
-    Left = 36
-    Top = 439
+    Left = 180
+    Top = 447
     Width = 98
     Height = 22
     TabOrder = 19
     Text = 'Edit1'
   end
   object Edit19: TEdit
-    Left = 36
-    Top = 465
+    Left = 89
+    Top = 471
     Width = 98
     Height = 22
     TabOrder = 20
     Text = 'Edit1'
   end
   object Edit20: TEdit
-    Left = 36
-    Top = 491
+    Left = 207
+    Top = 497
     Width = 98
     Height = 22
     TabOrder = 21
     Text = 'Edit1'
   end
   object DateTimePicker2: TDateTimePicker
-    Left = 36
-    Top = 517
+    Left = 211
+    Top = 525
     Width = 98
     Height = 22
     Date = 42410.886175358800000000
@@ -591,24 +592,24 @@ object Form1: TForm1
     TabOrder = 22
   end
   object Edit21: TEdit
-    Left = 36
-    Top = 545
+    Left = 45
+    Top = 553
     Width = 98
     Height = 22
     TabOrder = 23
     Text = 'Edit1'
   end
   object Edit22: TEdit
-    Left = 36
-    Top = 571
+    Left = 45
+    Top = 581
     Width = 98
     Height = 22
     TabOrder = 24
     Text = 'Edit1'
   end
   object DateTimePicker3: TDateTimePicker
-    Left = 36
-    Top = 597
+    Left = 91
+    Top = 609
     Width = 98
     Height = 22
     Date = 42410.886175358800000000
@@ -616,8 +617,8 @@ object Form1: TForm1
     TabOrder = 25
   end
   object Button1: TButton
-    Left = 588
-    Top = 596
+    Left = 670
+    Top = 624
     Width = 98
     Height = 25
     Caption = #1057#1086#1079#1076#1072#1090#1100
@@ -625,72 +626,72 @@ object Form1: TForm1
     OnClick = Button1Click
   end
   object Edit23: TEdit
-    Left = 293
-    Top = 465
+    Left = 375
+    Top = 468
     Width = 127
     Height = 22
     TabOrder = 27
     Text = 'Edit1'
   end
   object Edit24: TEdit
-    Left = 293
-    Top = 493
+    Left = 375
+    Top = 496
     Width = 127
     Height = 22
     TabOrder = 28
     Text = 'Edit1'
   end
   object Edit25: TEdit
-    Left = 293
-    Top = 521
+    Left = 375
+    Top = 524
     Width = 127
     Height = 22
     TabOrder = 29
     Text = 'Edit1'
   end
   object Edit26: TEdit
-    Left = 426
-    Top = 465
+    Left = 508
+    Top = 468
     Width = 127
     Height = 22
     TabOrder = 30
     Text = 'Edit1'
   end
   object Edit27: TEdit
-    Left = 426
-    Top = 493
+    Left = 508
+    Top = 496
     Width = 127
     Height = 22
     TabOrder = 31
     Text = 'Edit1'
   end
   object Edit28: TEdit
-    Left = 426
-    Top = 521
+    Left = 508
+    Top = 524
     Width = 127
     Height = 22
     TabOrder = 32
     Text = 'Edit1'
   end
   object Edit29: TEdit
-    Left = 559
-    Top = 465
+    Left = 641
+    Top = 468
     Width = 127
     Height = 22
     TabOrder = 33
     Text = 'Edit1'
   end
   object Edit30: TEdit
-    Left = 559
-    Top = 493
+    Left = 641
+    Top = 496
     Width = 127
     Height = 22
     TabOrder = 34
     Text = 'Edit1'
   end
   object Edit31: TEdit
-    Left = 559
-    Top = 521
+    Left = 641
+    Top = 524
     Width = 127
     Height = 22
     TabOrder = 35
