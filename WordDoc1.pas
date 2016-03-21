@@ -13,6 +13,14 @@ interface
 implementation
 
 procedure sostav(Mas:Aos;Date:TDate;profile:integer);
+var
+  WordApp: WordApplication;
+  Docs: Documents;
+  Doc: WordDocument;
+  Pars: Paragraphs;
+  Par: Paragraph;
+  D: OleVariant;
+  i:integer;
 begin
 
  WordApp := CoWordApplication.Create;
